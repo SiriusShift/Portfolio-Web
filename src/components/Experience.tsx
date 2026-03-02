@@ -57,8 +57,8 @@ const Experience = () => {
               <div className="w-full">
                 <InteractiveStepperTitle>{item.title}</InteractiveStepperTitle>
                 <InteractiveStepperDescription className="flex flex-row sm:flex-col justify-between">
-                  <p className="text-xs">{item.company}</p>
-                  <p className="text-xs">{item.year}</p>
+                  <span className="text-xs">{item.company}</span>
+                  <span className="text-xs">{item.year}</span>
                 </InteractiveStepperDescription>
               </div>
             </InteractiveStepperTrigger>

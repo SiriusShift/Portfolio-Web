@@ -1,3 +1,4 @@
+import React from "react";
 export const Icons = {
   react: (props: React.SVGProps<SVGSVGElement>) => (
     <svg

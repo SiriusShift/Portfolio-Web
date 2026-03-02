@@ -15,11 +15,11 @@ const Header = () => {
   return (
     <header className="relative flex items-start gap-5 sm:gap-6">
       {/* Accent line */}
-      <div className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-foreground via-foreground/30 to-transparent rounded-full" />
+      {/* <div className="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-foreground via-foreground/30 to-transparent rounded-full" /> */}
 
       {/* Profile image */}
-      <div className="relative ml-4 shrink-0">
-        <div className="relative size-24 sm:size-32 overflow-hidden rounded-xl ring-1 ring-border shadow-lg">
+      <div className="relative shrink-0">
+        <div className="relative size-28 sm:size-32 overflow-hidden rounded-xl ring-1 ring-border shadow-lg">
           <Image
             src={isImageHovered ? HoverImage : DefaultImage}
             alt="Charles Amiel Marquez"
@@ -34,7 +34,7 @@ const Header = () => {
       </div>
 
       {/* Info */}
-      <div className="flex-1 flex flex-col gap-3 pt-0.5">
+      <div className="flex-1 flex flex-col gap-2 sm:gap-4 pt-0.5">
         {/* Top row: name + toggle */}
         <div className="flex items-start justify-between gap-2">
           <div>
