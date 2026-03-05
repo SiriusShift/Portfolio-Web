@@ -33,9 +33,9 @@ const Socials = () => {
 
         return (
           <Button
-            variant={"ghost"}
+          variant={"ghost"}
             key={social.name}
-            className="hidden sm:flex sm:flex-row items-center gap-2 p-4 h-12 cursor-pointer"
+            className="flex flex-row items-center gap-2 p-4 h-12 cursor-pointer"
             asChild
           >
             <a
@@ -45,7 +45,7 @@ const Socials = () => {
               className="flex justify-center"
             >
               {/* Desktop */}
-              <Icon className="w-4 h-4" />
+              <Icon className="w-4 h-4 text-foreground" />
               <h1 className="text-sm hidden sm:inline">{social.name}</h1>
             </a>
           </Button>
