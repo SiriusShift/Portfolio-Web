@@ -7,7 +7,7 @@ import { iconMap } from "./[projectName]/page";
 
 const page = () => {
   return (
-    <div className="mx-auto w-full max-w-3xl px-4 py-12 space-y-10">
+    <div className="mx-auto w-full max-w-3xl px-4 h-dvh space-y-10">
       {/* Back navigation */}
       <Link
         href="/"
@@ -37,7 +37,7 @@ const page = () => {
             >
               <div className="flex items-center gap-3">
                 {icon && (
-                  <div className="flex h-8 w-8 items-center justify-center rounded-md bg-muted text-muted-foreground group-hover:bg-background transition-colors shrink-0">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-md bg-white border text-muted-foreground  transition-colors shrink-0">
                     {icon}
                   </div>
                 )}

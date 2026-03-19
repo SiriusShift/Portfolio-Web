@@ -56,7 +56,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center p-4`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center m-4`}
       >
         <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
           {children}

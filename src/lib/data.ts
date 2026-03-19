@@ -1,4 +1,29 @@
-export const projects = [
+import ArcanaDashboard from "../../public/arcana/dashboard.jpeg";
+import ArcanaCheckin from "../../public/arcana/checkin.jpeg";
+import ArcanaUsers from "../../public/arcana/users.jpeg";
+import ArcanaSales from "../../public/arcana/sales.jpeg";
+import ArcanaMrp from "../../public/arcana/mrp.jpeg";
+import ArcanaRegistration from "../../public/arcana/registration.jpeg";
+import ArcanaProspect from "../../public/arcana/prospect.jpeg";
+import { StaticImageData } from "next/image";
+
+export interface projectTypes {
+  name: string;
+  description: string;
+  technology: string;
+  tools: string[];
+  features: string[];
+  year: string;
+  preview: string | null;
+  images: imageType[];
+}
+
+export interface imageType {
+  image: StaticImageData;
+  alt: string;
+}
+
+export const projects: projectTypes[] = [
   {
     name: "Trackwise",
     description: "A responsive personal finance tracking web application.",
@@ -24,7 +49,8 @@ export const projects = [
       "Statistics",
     ],
     year: "2026",
-    preview: null
+    preview: null,
+    images: [],
   },
   {
     name: "DoculinkSF",
@@ -41,7 +67,8 @@ export const projects = [
       "Secure Storage",
     ],
     year: "2025",
-    preview: "https://www.doculinksf.com/"
+    preview: "https://www.doculinksf.com/",
+    images: [],
   },
 
   {
@@ -75,7 +102,8 @@ export const projects = [
       "Statistics",
     ],
     year: "2025",
-    preview: "https://pathalert.hygen.live/"
+    preview: "https://pathalert.hygen.live/",
+    images: [],
   },
   {
     name: "Arcana",
@@ -90,5 +118,15 @@ export const projects = [
       "Reports",
     ],
     year: "2024",
+    preview: null,
+    images: [
+      { image: ArcanaDashboard, alt: "Analytics Dashboard" },
+      { image: ArcanaCheckin, alt: "Check-In System" },
+      { image: ArcanaUsers, alt: "User Management" },
+      { image: ArcanaProspect, alt: "Prospect Management" },
+      { image: ArcanaRegistration, alt: "Customer Registration" },
+      { image: ArcanaSales, alt: "Point of Sale" },
+      { image: ArcanaMrp, alt: "MRP Overview" },
+    ],
   },
 ];
