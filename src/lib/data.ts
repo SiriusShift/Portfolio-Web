@@ -5,6 +5,16 @@ import ArcanaSales from "../../public/arcana/sales.jpeg";
 import ArcanaMrp from "../../public/arcana/mrp.jpeg";
 import ArcanaRegistration from "../../public/arcana/registration.jpeg";
 import ArcanaProspect from "../../public/arcana/prospect.jpeg";
+
+import DoculinkLanding from "../../public/doculinksf/landing.jpeg"
+import DoculinkSubdivisions from "../../public/doculinksf/subdivisions.jpeg"
+import DoculinkLguView from "../../public/doculinksf/lgu-projects.jpeg"
+import DoculinkSubdiView from "../../public/doculinksf/subdivision-view.jpeg"
+import DoculinkLguManage from "../../public/doculinksf/manage.jpeg"
+import DoculinkProjectView from "../../public/doculinksf/view.jpeg"
+import DoculinkDocuView from "../../public/doculinksf/view-docs.png"
+import DoculinkDocuUpload from "../../public/doculinksf/upload.png"
+
 import { StaticImageData } from "next/image";
 
 export interface projectTypes {
@@ -68,7 +78,16 @@ export const projects: projectTypes[] = [
     ],
     year: "2025",
     preview: "https://www.doculinksf.com/",
-    images: [],
+    images: [
+      { image: DoculinkLanding, alt: "Landing Page"},
+      {image:DoculinkSubdivisions, alt: "Subdivision List"},
+      {image:DoculinkLguView, alt: "LGU Project List"},
+      {image:DoculinkSubdiView, alt: "Subdivision Project List"},
+      {image:DoculinkLguManage, alt: "Requirements Management"},
+      {image: DoculinkProjectView, alt: "Project View"},
+            {image: DoculinkDocuUpload, alt: "Document Upload"},
+      {image: DoculinkDocuView, alt: "Document Viewing"},
+    ],
   },
 
   {

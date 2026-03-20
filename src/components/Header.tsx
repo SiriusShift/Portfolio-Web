@@ -80,10 +80,7 @@ const Header = () => {
             className="text-xs h-8 px-3 gap-1.5"
             asChild
           >
-            <a
-              href="mailto:lagmanmarquez@gmail.com"
-              aria-label="Send Email"
-            >
+            <a href="mailto:lagmanmarquez@gmail.com" aria-label="Send Email">
               <Mail size={13} />
               Email
             </a>

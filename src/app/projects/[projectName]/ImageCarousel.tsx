@@ -42,7 +42,7 @@ const ImageCarousel = ({ project } : {project: projectTypes}) => {
                     <CarouselItem
                       key={index}
                       onClick={() => handleView(index)}
-                      className="basis-1/2 pl-1 md:basis-1/3 lg:basis-1/3"
+                      className="basis-1/2 pl-1 md:basis-1/3 lg:basis-1/3 cursor-pointer"
                     >
                       <div className="p-1">
                         <Card className="h-40 p-0 overflow-hidden">

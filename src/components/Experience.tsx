@@ -22,7 +22,7 @@ const experience: ExperienceItem[] = [
   {
     title: "Front End Developer",
     company: "RDF Feed, Livestock & Foods Inc.",
-    year: "Current",
+    year: "2024 - Current",
     current: true,
   },
   {

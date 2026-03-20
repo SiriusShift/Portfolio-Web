@@ -21,7 +21,7 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         {projects.map((proj, key) => (
-          <Card key={key} className="p-3 text-start gap-1 hover:bg-secondary" onClick={() => router.push(`/projects/${proj.name}`)}>
+          <Card key={key} className="p-3 text-start gap-1 hover:bg-secondary cursor-pointer" onClick={() => router.push(`/projects/${proj.name}`)}>
             <h1 className="text-sm font-medium">{proj.name}</h1>
             <div className="flex justify-between">
               <p className="text-xs">{proj.technology}</p>

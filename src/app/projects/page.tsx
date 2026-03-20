@@ -33,7 +33,7 @@ const page = () => {
             <Link
               key={index}
               href={`/projects/${proj.name}`}
-              className="group flex items-center justify-between py-4 hover:bg-muted/40 -mx-3 px-3 transition-colors cursor-progress "
+              className="group flex items-center justify-between py-4 hover:bg-muted/40 -mx-3 px-3 transition-colors cursor-pointer "
             >
               <div className="flex items-center gap-3">
                 {icon && (
