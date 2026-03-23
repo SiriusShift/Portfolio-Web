@@ -63,10 +63,10 @@ const Header = () => {
             asChild
           >
             <a
-              href={RESUME_PATH}
+              href={"https://docs.google.com/document/d/1eiEe63EuANJq9f5WO-5Rkf0D0HnPHnHk/edit?usp=sharing&ouid=104001162674647361446&rtpof=true&sd=true"}
               download="Marquez_Fullstack Developer"
-              target="_blank"
               rel="noopener noreferrer"
+                            target="_blank"
               aria-label="Download Resume"
             >
               <FileText size={13} />
