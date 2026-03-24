@@ -6,14 +6,25 @@ import ArcanaMrp from "../../public/arcana/mrp.jpeg";
 import ArcanaRegistration from "../../public/arcana/registration.jpeg";
 import ArcanaProspect from "../../public/arcana/prospect.jpeg";
 
-import DoculinkLanding from "../../public/doculinksf/landing.jpeg"
-import DoculinkSubdivisions from "../../public/doculinksf/subdivisions.jpeg"
-import DoculinkLguView from "../../public/doculinksf/lgu-projects.jpeg"
-import DoculinkSubdiView from "../../public/doculinksf/subdivision-view.jpeg"
-import DoculinkLguManage from "../../public/doculinksf/manage.jpeg"
-import DoculinkProjectView from "../../public/doculinksf/view.jpeg"
-import DoculinkDocuView from "../../public/doculinksf/view-docs.png"
-import DoculinkDocuUpload from "../../public/doculinksf/upload.png"
+import DoculinkLanding from "../../public/doculinksf/landing.jpeg";
+import DoculinkSubdivisions from "../../public/doculinksf/subdivisions.jpeg";
+import DoculinkLguView from "../../public/doculinksf/lgu-projects.jpeg";
+import DoculinkSubdiView from "../../public/doculinksf/subdivision-view.jpeg";
+import DoculinkLguManage from "../../public/doculinksf/manage.jpeg";
+import DoculinkProjectView from "../../public/doculinksf/view.jpeg";
+import DoculinkDocuView from "../../public/doculinksf/view-docs.png";
+import DoculinkDocuUpload from "../../public/doculinksf/upload.png";
+
+import PathAlertLandingLoginMobile from "../../public/pathalert/landing.png";
+import PathAlertRegistrationMobile from "../../public/pathalert/registration.png";
+import PathAlertLoginWeb from "../../public/pathalert/admin-login.jpeg";
+import PathAlertDashboardWeb from "../../public/pathalert/dashboard.jpeg";
+import PathAlertMapWeb from "../../public/pathalert/map.jpeg";
+import PathAlertUsersWeb from "../../public/pathalert/users.jpeg";
+import PathAlertReportsWeb from "../../public/pathalert/reports.jpeg";
+import PathAlertViewReportWeb from "../../public/pathalert/view.jpeg";
+import PathAlertSettingsProfileWeb from "../../public/pathalert/settings-profile.jpeg";
+import PathAlertSettingsSecurityWeb from "../../public/pathalert/settings-security.jpeg";
 
 import { StaticImageData } from "next/image";
 
@@ -79,14 +90,14 @@ export const projects: projectTypes[] = [
     year: "2025",
     preview: "https://www.doculinksf.com/",
     images: [
-      { image: DoculinkLanding, alt: "Landing Page"},
-      {image:DoculinkSubdivisions, alt: "Subdivision List"},
-      {image:DoculinkLguView, alt: "LGU Project List"},
-      {image:DoculinkSubdiView, alt: "Subdivision Project List"},
-      {image:DoculinkLguManage, alt: "Requirements Management"},
-      {image: DoculinkProjectView, alt: "Project View"},
-            {image: DoculinkDocuUpload, alt: "Document Upload"},
-      {image: DoculinkDocuView, alt: "Document Viewing"},
+      { image: DoculinkLanding, alt: "Landing Page" },
+      { image: DoculinkSubdivisions, alt: "Subdivision List" },
+      { image: DoculinkLguView, alt: "LGU Project List" },
+      { image: DoculinkSubdiView, alt: "Subdivision Project List" },
+      { image: DoculinkLguManage, alt: "Requirements Management" },
+      { image: DoculinkProjectView, alt: "Project View" },
+      { image: DoculinkDocuUpload, alt: "Document Upload" },
+      { image: DoculinkDocuView, alt: "Document Viewing" },
     ],
   },
 
@@ -113,16 +124,29 @@ export const projects: projectTypes[] = [
       "AWS S3",
     ],
     features: [
-      "Navigation",
+      "Smart Navigation",
       "Incident Reporting",
       "Re-routing",
       "LGU Dashboard",
       "Real-time Updates",
       "Statistics",
+      "Accident Heatmap",
     ],
     year: "2025",
     preview: "https://pathalert.hygen.live/",
-    images: [],
+    images: [
+      { image: PathAlertLandingLoginMobile, alt: "Mobile Landing Screen" },
+      { image: PathAlertRegistrationMobile, alt: "Mobile Registration Screen" },
+      { image: PathAlertLoginWeb, alt: "Admin Login Page" },
+      { image: PathAlertDashboardWeb, alt: "Admin Dashboard Page" },
+      { image: PathAlertDashboardWeb, alt: "Admin Dashboard Page" },
+      { image: PathAlertMapWeb, alt: "Admin Map Page" },
+      { image: PathAlertUsersWeb, alt: "Admin Users Page" },
+      { image: PathAlertReportsWeb, alt: "Admin Reports Page" },
+      { image: PathAlertViewReportWeb, alt: "View Report" },
+      { image: PathAlertSettingsProfileWeb, alt: "Profile Settings Page" },
+      { image: PathAlertSettingsSecurityWeb, alt: "Profile Settings Page" },
+    ],
   },
   {
     name: "Arcana",

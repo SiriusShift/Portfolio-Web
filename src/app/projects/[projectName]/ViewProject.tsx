@@ -45,9 +45,9 @@ const ViewProject = ({
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent
         onKeyDown={handleKeyPress}
-        className=" h-dvh min-w-full flex flex-col justify-between items-center rounded-none  bg-background/80"
+        className=" h-dvh min-w-full flex flex-col m-0 justify-between items-center gap-0 rounded-none  bg-background/80"
       >
-        <DialogTitle className="absolute top-7 left-25">
+        <DialogTitle className="absolute top-7 left-25 text-shadow-2xs text-shadow-gray-400">
           {activeImage?.alt}
         </DialogTitle>
         <DialogDescription className="hidden" />
@@ -56,26 +56,30 @@ const ViewProject = ({
             {index + 1}/{pageSize}
           </h1>
         </div>
-        <div className="flex w-full h-full justify-between items-center">
+        <div className="flex w-full h-full justify-center items-center">
           <Button
             disabled={index + 1 === 1}
             variant={"secondary"}
             onClick={handlePrevious}
-            className="opacity-50 sm:opacity-100 absolute sm:relative left-6 sm:left-0"
+            className="opacity-50 sm:opacity-100 absolute z-100 left-6 "
           >
             <ArrowLeft />
           </Button>
 
-          <Image
-            src={activeImage?.image}
-            alt={activeImage?.alt}
-            className="w-full sm:w-[75%]"
-          />
+<div className="w-full lg:w-[75%] h-[70vh] relative">
+  <Image
+    src={activeImage?.image}
+    alt={activeImage?.alt}
+    fill
+    className="object-contain"
+  />
+</div>
+
           <Button
             disabled={index + 1 === pageSize}
             variant={"secondary"}
             onClick={handleNext}
-            className="opacity-50 sm:opacity-100 absolute sm:relative right-6 sm:right-0"
+            className="opacity-50 sm:opacity-100 absolute  right-6"
           >
             <ArrowRight />
           </Button>
