@@ -17,6 +17,13 @@ import DoculinkDocuUpload from "../../public/doculinksf/upload.png";
 
 import PathAlertLandingLoginMobile from "../../public/pathalert/landing.png";
 import PathAlertRegistrationMobile from "../../public/pathalert/registration.png";
+import PathAlertHomeMobile from "../../public/pathalert/home.png";
+import PathAlertNavigateMobile from "../../public/pathalert/navigate.png";
+import PathAlertFormMobile from "../../public/pathalert/form.png";
+import PathAlertGraphMobile from "../../public/pathalert/graph.png";
+import PathAlertSettingsProfileMobile from "../../public/pathalert/settings-profile.png"
+import PathAlertSettingsVehicleMobile from "../../public/pathalert/settings-vehicle.png"
+
 import PathAlertLoginWeb from "../../public/pathalert/admin-login.jpeg";
 import PathAlertDashboardWeb from "../../public/pathalert/dashboard.jpeg";
 import PathAlertMapWeb from "../../public/pathalert/map.jpeg";
@@ -45,34 +52,34 @@ export interface imageType {
 }
 
 export const projects: projectTypes[] = [
-  {
-    name: "Trackwise",
-    description: "A responsive personal finance tracking web application.",
-    technology: "Full-stack",
-    tools: [
-      "React",
-      "Tailwind",
-      "ShadCN",
-      "Redux",
-      "Node",
-      "Express",
-      "PostgreSQL",
-      "Prisma",
-      "AWS SES",
-      "AWS S3",
-      "Figma",
-    ],
-    features: [
-      "Authentication",
-      "Expense Tracking",
-      "Assets & Loans",
-      "Spending Limits",
-      "Statistics",
-    ],
-    year: "2026",
-    preview: null,
-    images: [],
-  },
+  // {
+  //   name: "Trackwise",
+  //   description: "A responsive personal finance tracking web application.",
+  //   technology: "Full-stack",
+  //   tools: [
+  //     "React",
+  //     "Tailwind",
+  //     "ShadCN",
+  //     "Redux",
+  //     "Node",
+  //     "Express",
+  //     "PostgreSQL",
+  //     "Prisma",
+  //     "AWS SES",
+  //     "AWS S3",
+  //     "Figma",
+  //   ],
+  //   features: [
+  //     "Authentication",
+  //     "Expense Tracking",
+  //     "Assets & Loans",
+  //     "Spending Limits",
+  //     "Statistics",
+  //   ],
+  //   year: "2026",
+  //   preview: null,
+  //   images: [],
+  // },
   {
     name: "DoculinkSF",
     description:
@@ -137,6 +144,12 @@ export const projects: projectTypes[] = [
     images: [
       { image: PathAlertLandingLoginMobile, alt: "Mobile Landing Screen" },
       { image: PathAlertRegistrationMobile, alt: "Mobile Registration Screen" },
+            { image: PathAlertHomeMobile, alt: "Mobile Home Screen" },
+            { image: PathAlertNavigateMobile, alt: "Mobile Navigation" },
+            { image: PathAlertFormMobile, alt: "Mobile Reporting" },
+            { image: PathAlertGraphMobile, alt: "Mobile Graph View" },
+            { image: PathAlertSettingsProfileMobile, alt: "Mobile Settings Profile View" },
+            { image: PathAlertSettingsVehicleMobile, alt: "Mobile Settings Vehicle View" },
       { image: PathAlertLoginWeb, alt: "Admin Login Page" },
       { image: PathAlertDashboardWeb, alt: "Admin Dashboard Page" },
       { image: PathAlertDashboardWeb, alt: "Admin Dashboard Page" },
