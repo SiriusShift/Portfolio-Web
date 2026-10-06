@@ -61,8 +61,8 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
-      <Analytics />
     </html>
   );
 }
